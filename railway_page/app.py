@@ -11,6 +11,7 @@ def index():
     <html>
     <head>
         <title>Welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <style>
             * {
                 margin: 0;
@@ -26,11 +27,13 @@ def index():
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                overflow: hidden;
+                overflow-x: hidden;
+                width: 100%;
             }
 
             .container {
                 max-width: 1200px;
+                width: 100%;
                 padding: 2rem;
                 text-align: center;
                 position: relative;
@@ -57,7 +60,8 @@ def index():
 
             .nav-links {
                 display: flex;
-                gap: 2rem;
+                flex-wrap: wrap;
+                gap: 1rem;
                 justify-content: center;
                 opacity: 0;
                 animation: fadeUp 1s ease 0.6s forwards;
@@ -71,6 +75,7 @@ def index():
                 border-radius: 30px;
                 backdrop-filter: blur(10px);
                 transition: all 0.3s ease;
+                white-space: nowrap;
             }
 
             .nav-link:hover {
@@ -240,15 +245,14 @@ def guitar():
             .nav-link {
                 position: fixed;
                 top: 20px;
-                right: 20px;
+                left: 20px;
                 padding: 0.8rem 1.5rem;
-                border: none;
-                border-radius: 5px;
-                background: rgba(255,255,255,0.2);
+                background: rgba(255, 255, 255, 0.1);
                 color: white;
                 text-decoration: none;
+                border-radius: 5px;
                 transition: all 0.3s ease;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(10px);
                 z-index: 1000;
             }
 
@@ -456,15 +460,15 @@ def bird():
             .nav-link {
                 position: fixed;
                 top: 20px;
-                right: 20px;
+                left: 20px;
                 padding: 0.8rem 1.5rem;
-                border: none;
-                border-radius: 5px;
-                background: rgba(255,255,255,0.2);
-                color: #2c3e50;
+                background: rgba(255, 255, 255, 0.1);
+                color: white;
                 text-decoration: none;
+                border-radius: 5px;
                 transition: all 0.3s ease;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(10px);
+                z-index: 1000;
             }
 
             .nav-link:hover {
@@ -602,15 +606,15 @@ def my_page():
             .nav-link {
                 position: fixed;
                 top: 20px;
-                right: 20px;
+                left: 20px;
                 padding: 0.8rem 1.5rem;
-                border: none;
-                border-radius: 5px;
-                background: rgba(255,255,255,0.2);
-                color: #2c3e50;
+                background: rgba(255, 255, 255, 0.1);
+                color: white;
                 text-decoration: none;
+                border-radius: 5px;
                 transition: all 0.3s ease;
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(10px);
+                z-index: 1000;
             }
 
             .nav-link:hover {
@@ -712,27 +716,29 @@ def memes():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
-                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                background: linear-gradient(135deg, #000000, #14213d);
                 min-height: 100vh;
                 color: white;
             }
             .container {
-                max-width: 1200px;
+                max-width: 800px;
                 margin: 0 auto;
                 padding: 20px;
             }
             .nav-link {
                 display: inline-block;
                 padding: 10px 20px;
-                background: rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.1);
                 color: white;
                 text-decoration: none;
                 border-radius: 5px;
                 margin-bottom: 20px;
-                transition: background 0.3s;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
             }
             .nav-link:hover {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
             }
             .meme-grid {
                 display: grid;
@@ -807,7 +813,7 @@ def dad_jokes():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
-                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                background: linear-gradient(135deg, #000000, #14213d);
                 min-height: 100vh;
                 color: white;
             }
@@ -819,15 +825,17 @@ def dad_jokes():
             .nav-link {
                 display: inline-block;
                 padding: 10px 20px;
-                background: rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.1);
                 color: white;
                 text-decoration: none;
                 border-radius: 5px;
                 margin-bottom: 20px;
-                transition: background 0.3s;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
             }
             .nav-link:hover {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
             }
             .joke-card {
                 background: rgba(255, 255, 255, 0.1);
@@ -891,7 +899,7 @@ def dad_jokes():
                 <div class="joke-card">
                     <div class="setup">What do you call a fake noodle?</div>
                     <div class="punchline">An impasta!</div>
-                    <div class="category">Food Jokes</div>
+                    <div class="category">Noodle Jokes</div>
                 </div>
             </div>
         </div>
@@ -958,7 +966,7 @@ def bad_jokes():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
-                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                background: linear-gradient(135deg, #000000, #14213d);
                 min-height: 100vh;
                 color: white;
             }
@@ -970,15 +978,17 @@ def bad_jokes():
             .nav-link {
                 display: inline-block;
                 padding: 10px 20px;
-                background: rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.1);
                 color: white;
                 text-decoration: none;
                 border-radius: 5px;
                 margin-bottom: 20px;
-                transition: background 0.3s;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
             }
             .nav-link:hover {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
             }
             .joke-card {
                 background: rgba(255, 255, 255, 0.1);
@@ -1031,8 +1041,8 @@ def bad_jokes():
                     <div class="cringe-meter">Cringe Level: 8/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">Why don’t skeletons fight each other?</div>
-                    <div class="punchline">Because they don’t have the guts.</div>
+                    <div class="setup">Why don't skeletons fight each other?</div>
+                    <div class="punchline">Because they don't have the guts.</div>
                     <div class="category">Dead Jokes</div>
                     <div class="cringe-meter">Cringe Level: 9/10</div>
                 </div>
@@ -1043,14 +1053,14 @@ def bad_jokes():
                     <div class="cringe-meter">Cringe Level: 7/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What’s orange and sounds like a parrot?</div>
+                    <div class="setup">What's orange and sounds like a parrot?</div>
                     <div class="punchline">A carrot</div>
                     <div class="category">Carrot Jokes</div>
                     <div class="cringe-meter">Cringe Level: 10/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">I’m reading a book on anti-gravity.</div>
-                    <div class="punchline">It’s impossible to put down</div>
+                    <div class="setup">I'm reading a book on anti-gravity.</div>
+                    <div class="punchline">It's impossible to put down</div>
                     <div class="category">Anti-gravity Jokes</div>
                     <div class="cringe-meter">Cringe Level: 9/10</div>
                 </div>
@@ -1065,14 +1075,14 @@ def bad_jokes():
                     cringeLevel: "8/10"
                 },
                 {
-                    setup: "I couldn’t figure out how to put my seatbelt on...",
+                    setup: "I couldn't figure out how to put my seatbelt on...",
                     punchline: "But then it clicked",
                     category: "Seatbelt Jokes",
                     cringeLevel: "9/10"
                 },
                 {
-                    setup: "Why don’t oysters donate to charity?",
-                    punchline: "Because they’re shellfish",
+                    setup: "Why don't oysters donate to charity?",
+                    punchline: "Because they're shellfish",
                     category: "Expensive Jokes",
                     cringeLevel: "7/10"
                 },
@@ -1083,7 +1093,7 @@ def bad_jokes():
                     cringeLevel: "8/10"
                 },
                 {
-                    setup: "What do you call cheese that isn’t yours?",
+                    setup: "What do you call cheese that isn't yours?",
                     punchline: "Nacho cheese",
                     category: "Cheesy Jokes",
                     cringeLevel: "10/10"
