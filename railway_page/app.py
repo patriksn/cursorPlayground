@@ -764,12 +764,12 @@ def memes():
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Docker Life</h2>
-                    <img src="https://i.imgur.com/8MupZDE.png" alt="Docker Meme" class="meme-image">
+                    <img src="https://imgur.com/gallery/baboon-pushes-off-laptop-5qkbnZc#/t/frustration" alt="Docker Meme" class="meme-image">
                     <p class="meme-description">When your container works locally but fails in production</p>
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Git Life</h2>
-                    <img src="https://i.imgur.com/2ZQ3Q9X.png" alt="Git Meme" class="meme-image">
+                    <img src="https://imgur.com/gallery/this-bothers-me-more-than-i-care-to-admit-2UCB2b7#/t/whyyy" alt="Git Meme" class="meme-image">
                     <p class="meme-description">When you accidentally commit to main</p>
                 </div>
             </div>
@@ -785,7 +785,7 @@ def dad_jokes():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Programming Dad Jokes</title>
+        <title>Classic Dad Jokes</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -845,7 +845,7 @@ def dad_jokes():
     <body>
         <div class="container">
             <a href="/" class="nav-link">Back to Main</a>
-            <h1 style="text-align: center; margin-bottom: 30px;">Programming Dad Jokes</h1>
+            <h1 style="text-align: center; margin-bottom: 30px;">Classic Dad Jokes</h1>
             <div style="text-align: center; margin-bottom: 30px;">
                 <button onclick="showRandomJoke()" class="nav-link" style="cursor: pointer; border: none; font-size: 1.1em;">
                     Show Random Joke
@@ -853,58 +853,58 @@ def dad_jokes():
             </div>
             <div id="jokes-container">
                 <div class="joke-card">
-                    <div class="setup">Why do programmers prefer dark mode?</div>
-                    <div class="punchline">Because light attracts bugs!</div>
-                    <div class="category">General Programming</div>
+                    <div class="setup">Why don't eggs tell jokes?</div>
+                    <div class="punchline">They'd crack up!</div>
+                    <div class="category">Food Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">Why did the developer go broke?</div>
-                    <div class="punchline">Because he used up all his cache!</div>
-                    <div class="category">Web Development</div>
+                    <div class="setup">What do you call a bear with no teeth?</div>
+                    <div class="punchline">A gummy bear!</div>
+                    <div class="category">Animal Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What did the Python say to the JavaScript?</div>
-                    <div class="punchline">You're not my type!</div>
-                    <div class="category">Programming Languages</div>
+                    <div class="setup">What did the grape say when it got stepped on?</div>
+                    <div class="punchline">Nothing, it just let out a little wine!</div>
+                    <div class="category">Food Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">Why do programmers hate nature?</div>
-                    <div class="punchline">It has too many bugs!</div>
-                    <div class="category">General Programming</div>
+                    <div class="setup">Why did the scarecrow win an award?</div>
+                    <div class="punchline">Because he was outstanding in his field!</div>
+                    <div class="category">Farm Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What's a programmer's favorite place in the house?</div>
-                    <div class="punchline">The living room!</div>
-                    <div class="category">General Programming</div>
+                    <div class="setup">What do you call a fake noodle?</div>
+                    <div class="punchline">An impasta!</div>
+                    <div class="category">Food Jokes</div>
                 </div>
             </div>
         </div>
         <script>
             const jokes = [
                 {
-                    setup: "Why do programmers prefer dark mode?",
-                    punchline: "Because light attracts bugs!",
-                    category: "General Programming"
+                    setup: "Why don't eggs tell jokes?",
+                    punchline: "They'd crack up!",
+                    category: "Food Jokes"
                 },
                 {
-                    setup: "Why did the developer go broke?",
-                    punchline: "Because he used up all his cache!",
-                    category: "Web Development"
+                    setup: "What do you call a bear with no teeth?",
+                    punchline: "A gummy bear!",
+                    category: "Animal Jokes"
                 },
                 {
-                    setup: "What did the Python say to the JavaScript?",
-                    punchline: "You're not my type!",
-                    category: "Programming Languages"
+                    setup: "What did the grape say when it got stepped on?",
+                    punchline: "Nothing, it just let out a little wine!",
+                    category: "Food Jokes"
                 },
                 {
-                    setup: "Why do programmers hate nature?",
-                    punchline: "It has too many bugs!",
-                    category: "General Programming"
+                    setup: "Why did the scarecrow win an award?",
+                    punchline: "Because he was outstanding in his field!",
+                    category: "Farm Jokes"
                 },
                 {
-                    setup: "What's a programmer's favorite place in the house?",
-                    punchline: "The living room!",
-                    category: "General Programming"
+                    setup: "What do you call a fake noodle?",
+                    punchline: "An impasta!",
+                    category: "Food Jokes"
                 }
             ];
 
