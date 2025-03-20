@@ -121,6 +121,7 @@ def index():
                 <a href="/bird" class="nav-link">Bird Experience</a>
                 <a href="/my_page" class="nav-link">CSV Upload</a>
                 <a href="/memes" class="nav-link">Memes</a>
+                <a href="/dad-jokes" class="nav-link">Dad Jokes</a>
             </div>
         </div>
     </body>
@@ -763,16 +764,167 @@ def memes():
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Docker Life</h2>
-                    <img src="https://i.imgur.com/7Yw5J9F.jpg" alt="Docker Meme" class="meme-image">
+                    <img src="https://i.imgur.com/8MupZDE.png" alt="Docker Meme" class="meme-image">
                     <p class="meme-description">When your container works locally but fails in production</p>
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Git Life</h2>
-                    <img src="https://i.imgur.com/3XZQ3Q9.jpg" alt="Git Meme" class="meme-image">
+                    <img src="https://i.imgur.com/2ZQ3Q9X.png" alt="Git Meme" class="meme-image">
                     <p class="meme-description">When you accidentally commit to main</p>
                 </div>
             </div>
         </div>
+    </body>
+    </html>
+    '''
+    return render_template_string(html)
+
+@app.route('/dad-jokes')
+def dad_jokes():
+    html = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Programming Dad Jokes</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                min-height: 100vh;
+                color: white;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .nav-link {
+                display: inline-block;
+                padding: 10px 20px;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                transition: background 0.3s;
+            }
+            .nav-link:hover {
+                background: rgba(255, 255, 255, 0.3);
+            }
+            .joke-card {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                transition: transform 0.3s;
+            }
+            .joke-card:hover {
+                transform: translateY(-5px);
+            }
+            .setup {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #ffd700;
+            }
+            .punchline {
+                font-size: 1.1em;
+                color: rgba(255, 255, 255, 0.9);
+                font-style: italic;
+            }
+            .category {
+                font-size: 0.9em;
+                color: rgba(255, 255, 255, 0.6);
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="/" class="nav-link">Back to Main</a>
+            <h1 style="text-align: center; margin-bottom: 30px;">Programming Dad Jokes</h1>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <button onclick="showRandomJoke()" class="nav-link" style="cursor: pointer; border: none; font-size: 1.1em;">
+                    Show Random Joke
+                </button>
+            </div>
+            <div id="jokes-container">
+                <div class="joke-card">
+                    <div class="setup">Why do programmers prefer dark mode?</div>
+                    <div class="punchline">Because light attracts bugs!</div>
+                    <div class="category">General Programming</div>
+                </div>
+                <div class="joke-card">
+                    <div class="setup">Why did the developer go broke?</div>
+                    <div class="punchline">Because he used up all his cache!</div>
+                    <div class="category">Web Development</div>
+                </div>
+                <div class="joke-card">
+                    <div class="setup">What did the Python say to the JavaScript?</div>
+                    <div class="punchline">You're not my type!</div>
+                    <div class="category">Programming Languages</div>
+                </div>
+                <div class="joke-card">
+                    <div class="setup">Why do programmers hate nature?</div>
+                    <div class="punchline">It has too many bugs!</div>
+                    <div class="category">General Programming</div>
+                </div>
+                <div class="joke-card">
+                    <div class="setup">What's a programmer's favorite place in the house?</div>
+                    <div class="punchline">The living room!</div>
+                    <div class="category">General Programming</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const jokes = [
+                {
+                    setup: "Why do programmers prefer dark mode?",
+                    punchline: "Because light attracts bugs!",
+                    category: "General Programming"
+                },
+                {
+                    setup: "Why did the developer go broke?",
+                    punchline: "Because he used up all his cache!",
+                    category: "Web Development"
+                },
+                {
+                    setup: "What did the Python say to the JavaScript?",
+                    punchline: "You're not my type!",
+                    category: "Programming Languages"
+                },
+                {
+                    setup: "Why do programmers hate nature?",
+                    punchline: "It has too many bugs!",
+                    category: "General Programming"
+                },
+                {
+                    setup: "What's a programmer's favorite place in the house?",
+                    punchline: "The living room!",
+                    category: "General Programming"
+                }
+            ];
+
+            function showRandomJoke() {
+                const randomIndex = Math.floor(Math.random() * jokes.length);
+                const joke = jokes[randomIndex];
+                
+                const jokeCard = document.createElement('div');
+                jokeCard.className = 'joke-card';
+                jokeCard.innerHTML = `
+                    <div class="setup">${joke.setup}</div>
+                    <div class="punchline">${joke.punchline}</div>
+                    <div class="category">${joke.category}</div>
+                `;
+                
+                const container = document.getElementById('jokes-container');
+                container.innerHTML = '';
+                container.appendChild(jokeCard);
+            }
+        </script>
     </body>
     </html>
     '''
