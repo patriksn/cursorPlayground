@@ -119,7 +119,7 @@ def index():
             <div class="nav-links">
                 <a href="/guitar" class="nav-link">Guitar Experience</a>
                 <a href="/bird" class="nav-link">Bird Experience</a>
-                <a href="/my_page" class="nav-link">CSV Upload</a>
+                <!-- <a href="/my_page" class="nav-link">CSV Upload</a> -->
                 <a href="/memes" class="nav-link">Memes</a>
                 <a href="/dad-jokes" class="nav-link">Dad Jokes</a>
                 <a href="/bad-jokes" class="nav-link">Bad Jokes</a>
@@ -264,7 +264,7 @@ def guitar():
     <body>
         <a href="/" class="nav-link">Back to Main</a>
         <div class="container">
-            <h1 class="title">Heaven & Hell Guitar</h1>
+            <h1 class="title">What AI thinks a guitar should look like</h1>
             <div class="guitar-container">
                 <canvas class="particles-canvas" id="particlesCanvas"></canvas>
                 <canvas class="strings-canvas" id="stringsCanvas"></canvas>
@@ -493,6 +493,21 @@ def bird():
                 Its wings catch the light as it glides through the clouds, creating 
                 a breathtaking spectacle of nature's beauty.
             </p>
+            <div class="facts-container" style="margin-top: 2rem; text-align: left;">
+                <h2 style="color: #2c3e50; margin-bottom: 1rem;">Bird Facts</h2>
+                <div class="fact-card" style="background: rgba(255, 255, 255, 0.8); padding: 1rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Fact 1: Incredible Vision</h3>
+                    <p style="color: #34495e;">Birds of prey like eagles can spot their prey from up to 2 miles away, with vision that's 4-8 times stronger than humans!</p>
+                </div>
+                <div class="fact-card" style="background: rgba(255, 255, 255, 0.8); padding: 1rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Fact 2: Lightweight Bones</h3>
+                    <p style="color: #34495e;">A bird's bones are hollow and filled with air sacs, making them incredibly lightweight while maintaining strength. This helps them fly more efficiently.</p>
+                </div>
+                <div class="fact-card" style="background: rgba(255, 255, 255, 0.8); padding: 1rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Fact 3: High Altitude Champions</h3>
+                    <p style="color: #34495e;">Some birds, like the bar-headed goose, can fly at altitudes of over 20,000 feet, higher than Mount Everest!</p>
+                </div>
+            </div>
         </div>
     </body>
     </html>
@@ -770,7 +785,7 @@ def memes():
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Git Life</h2>
-                    <img src="https://i.imgur.com/2UCB2b7.jpeg" alt="Git Meme" class="meme-image">
+                    <img src="https://i.imgur.com/woSiAua.jpeg" alt="Git Meme" class="meme-image">
                     <p class="meme-description">When you accidentally commit to main</p>
                 </div>
             </div>
