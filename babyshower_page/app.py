@@ -148,7 +148,7 @@ def index():
         <div class="background-blur blur-1"></div>
         <div class="background-blur blur-2"></div>
         <div class="container">
-            <h1 class="welcome-text">Welcome to Our Baby Shower</h1>
+            <h1 class="welcome-text">Välkommen till Alida och Daniels baby shower</h1>
             <p class="subtitle">A celebration of new beginnings</p>
             
             <div class="image-section">
