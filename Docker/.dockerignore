@@ -1,0 +1,21 @@
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+
+# Version control
+.git/
+.gitignore
+
+# IDE specific
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store 
