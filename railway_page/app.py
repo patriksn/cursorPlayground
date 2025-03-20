@@ -125,7 +125,7 @@ def index():
                 <a href="/guitar" class="nav-link">Guitar Experience</a>
                 <a href="/bird" class="nav-link">Bird Experience</a>
                 <!-- <a href="/my_page" class="nav-link">CSV Upload</a> -->
-                <a href="/memes" class="nav-link">Memes</a>
+                <a href="/memes" class="nav-link">Meme Experience</a>
                 <a href="/dad-jokes" class="nav-link">Dad Jokes</a>
                 <a href="/bad-jokes" class="nav-link">Bad Jokes</a>
             </div>
@@ -268,7 +268,7 @@ def guitar():
     <body>
         <a href="/" class="nav-link">Back to Main</a>
         <div class="container">
-            <h1 class="title">What AI thinks a guitar should look like</h1>
+            <h1 class="title">What AI thinks a guitar looks like:</h1>
             <div class="guitar-container">
                 <canvas class="particles-canvas" id="particlesCanvas"></canvas>
                 <canvas class="strings-canvas" id="stringsCanvas"></canvas>
@@ -786,8 +786,8 @@ def memes():
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Docker Life</h2>
-                    <img src="https://i.imgur.com/RipYhiw.jpeg" alt="Docker Meme" class="meme-image">
-                    <p class="meme-description">When your container works locally but fails in production</p>
+                    <img src="https://i.imgur.com/PQ3LoKG.jpeg" alt="Docker Meme" class="meme-image">
+                    <p class="meme-description">.</p>
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Git Life</h2>
