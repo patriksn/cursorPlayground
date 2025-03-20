@@ -869,19 +869,19 @@ def dad_jokes():
             </div>
             <div id="jokes-container">
                 <div class="joke-card">
-                    <div class="setup">Why don't eggs tell jokes?</div>
-                    <div class="punchline">They'd crack up!</div>
-                    <div class="category">Food Jokes</div>
+                    <div class="setup">How do you organize a space party?</div>
+                    <div class="punchline">You planet</div>
+                    <div class="category">Space Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What do you call a bear with no teeth?</div>
-                    <div class="punchline">A gummy bear!</div>
-                    <div class="category">Animal Jokes</div>
+                    <div class="setup">What do you call a pile of cats?</div>
+                    <div class="punchline">A meow-tain!</div>
+                    <div class="category">Jokey Jokes</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What did the grape say when it got stepped on?</div>
-                    <div class="punchline">Nothing, it just let out a little wine!</div>
-                    <div class="category">Food Jokes</div>
+                    <div class="setup">I used to play piano by ear...</div>
+                    <div class="punchline">But now I use my hands</div>
+                    <div class="category">Ear Jokes</div>
                 </div>
                 <div class="joke-card">
                     <div class="setup">Why did the scarecrow win an award?</div>
@@ -1031,9 +1031,9 @@ def bad_jokes():
                     <div class="cringe-meter">Cringe Level: 8/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What did the grape say when it got stepped on?</div>
-                    <div class="punchline">Nothing, it just let out a little wine!</div>
-                    <div class="category">Food Jokes</div>
+                    <div class="setup">Why don’t skeletons fight each other?</div>
+                    <div class="punchline">Because they don’t have the guts.</div>
+                    <div class="category">Dead Jokes</div>
                     <div class="cringe-meter">Cringe Level: 9/10</div>
                 </div>
                 <div class="joke-card">
@@ -1043,15 +1043,15 @@ def bad_jokes():
                     <div class="cringe-meter">Cringe Level: 7/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">What do you call a bear with no teeth?</div>
-                    <div class="punchline">A gummy bear!</div>
-                    <div class="category">Animal Jokes</div>
-                    <div class="cringe-meter">Cringe Level: 8/10</div>
+                    <div class="setup">What’s orange and sounds like a parrot?</div>
+                    <div class="punchline">A carrot</div>
+                    <div class="category">Carrot Jokes</div>
+                    <div class="cringe-meter">Cringe Level: 10/10</div>
                 </div>
                 <div class="joke-card">
-                    <div class="setup">Why did the scarecrow win an award?</div>
-                    <div class="punchline">Because he was outstanding in his field!</div>
-                    <div class="category">Farm Jokes</div>
+                    <div class="setup">I’m reading a book on anti-gravity.</div>
+                    <div class="punchline">It’s impossible to put down</div>
+                    <div class="category">Anti-gravity Jokes</div>
                     <div class="cringe-meter">Cringe Level: 9/10</div>
                 </div>
             </div>
@@ -1065,28 +1065,28 @@ def bad_jokes():
                     cringeLevel: "8/10"
                 },
                 {
-                    setup: "What did the grape say when it got stepped on?",
-                    punchline: "Nothing, it just let out a little wine!",
-                    category: "Food Jokes",
+                    setup: "I couldn’t figure out how to put my seatbelt on...",
+                    punchline: "But then it clicked",
+                    category: "Seatbelt Jokes",
                     cringeLevel: "9/10"
                 },
                 {
-                    setup: "Why don't programmers like nature?",
-                    punchline: "It has too many bugs!",
-                    category: "Tech Jokes",
+                    setup: "Why don’t oysters donate to charity?",
+                    punchline: "Because they’re shellfish",
+                    category: "Expensive Jokes",
                     cringeLevel: "7/10"
                 },
                 {
-                    setup: "What do you call a bear with no teeth?",
-                    punchline: "A gummy bear!",
-                    category: "Animal Jokes",
+                    setup: "What do you call a dinosaur with an extensive vocabulary?",
+                    punchline: "A thesaurus!",
+                    category: "Dinosaur jokes!",
                     cringeLevel: "8/10"
                 },
                 {
-                    setup: "Why did the scarecrow win an award?",
-                    punchline: "Because he was outstanding in his field!",
-                    category: "Farm Jokes",
-                    cringeLevel: "9/10"
+                    setup: "What do you call cheese that isn’t yours?",
+                    punchline: "Nacho cheese",
+                    category: "Cheesy Jokes",
+                    cringeLevel: "10/10"
                 }
             ];
 
