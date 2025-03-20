@@ -120,6 +120,7 @@ def index():
                 <a href="/guitar" class="nav-link">Guitar Experience</a>
                 <a href="/bird" class="nav-link">Bird Experience</a>
                 <a href="/my_page" class="nav-link">CSV Upload</a>
+                <a href="/memes" class="nav-link">Memes</a>
             </div>
         </div>
     </body>
@@ -127,14 +128,13 @@ def index():
     '''
     return render_template_string(html)
 
-
 @app.route('/guitar')
 def guitar():
     html = '''
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Heaven & Hell Guitar</title>
+        <title>AI Guitar image</title>
         <style>
             :root {
                 --heaven-color: #87CEEB;
@@ -682,6 +682,101 @@ def upload_file():
         '''
     else:
         return 'Please upload a CSV file'
+
+@app.route('/memes')
+def memes():
+    html = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Funny Memes</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                min-height: 100vh;
+                color: white;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .nav-link {
+                display: inline-block;
+                padding: 10px 20px;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                transition: background 0.3s;
+            }
+            .nav-link:hover {
+                background: rgba(255, 255, 255, 0.3);
+            }
+            .meme-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+            .meme-card {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                padding: 15px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                transition: transform 0.3s;
+            }
+            .meme-card:hover {
+                transform: translateY(-5px);
+            }
+            .meme-image {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .meme-title {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #ffd700;
+            }
+            .meme-description {
+                font-size: 0.9em;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="/" class="nav-link">Back to Main</a>
+            <h1 style="text-align: center; margin-bottom: 30px;">Funny Memes</h1>
+            <div class="meme-grid">
+                <div class="meme-card">
+                    <h2 class="meme-title">Programming Life</h2>
+                    <img src="https://i.imgur.com/4M34hi2.jpg" alt="Programming Meme" class="meme-image">
+                    <p class="meme-description">When you finally fix that bug after 5 hours of debugging</p>
+                </div>
+                <div class="meme-card">
+                    <h2 class="meme-title">Docker Life</h2>
+                    <img src="https://i.imgur.com/7Yw5J9F.jpg" alt="Docker Meme" class="meme-image">
+                    <p class="meme-description">When your container works locally but fails in production</p>
+                </div>
+                <div class="meme-card">
+                    <h2 class="meme-title">Git Life</h2>
+                    <img src="https://i.imgur.com/3XZQ3Q9.jpg" alt="Git Meme" class="meme-image">
+                    <p class="meme-description">When you accidentally commit to main</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    '''
+    return render_template_string(html)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000) 
