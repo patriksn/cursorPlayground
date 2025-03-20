@@ -71,11 +71,13 @@ def index():
                 align-items: center;
                 justify-content: center;
                 backdrop-filter: blur(10px);
+                overflow: hidden;
             }
 
-            .image-placeholder {
-                color: #FF69B4;
-                font-size: 1.2rem;
+            .image-container img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
             }
 
             .content-section {
@@ -151,7 +153,7 @@ def index():
             
             <div class="image-section">
                 <div class="image-container">
-                    <div class="image-placeholder">Image Coming Soon</div>
+                    <img src="/static/babyshower.jpg" alt="Baby Shower Image">
                 </div>
             </div>
 
