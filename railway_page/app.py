@@ -10,7 +10,7 @@ def index():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Welcome</title>
+        <title>The Experience</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <style>
             * {
@@ -120,7 +120,7 @@ def index():
         <div class="background-blur blur-2"></div>
         <div class="container">
             <h1 class="welcome-text">Welcome to the Experience</h1>
-            <p class="subtitle">Discover something extraordinary</p>
+            <p class="subtitle">Discover something extra ordinary</p>
             <div class="nav-links">
                 <a href="/guitar" class="nav-link">Guitar Experience</a>
                 <a href="/bird" class="nav-link">Bird Experience</a>
@@ -787,7 +787,7 @@ def memes():
                 <div class="meme-card">
                     <h2 class="meme-title">Docker Life</h2>
                     <img src="https://i.imgur.com/PQ3LoKG.jpeg" alt="Docker Meme" class="meme-image">
-                    <p class="meme-description">.</p>
+                    <p class="meme-description"></p>
                 </div>
                 <div class="meme-card">
                     <h2 class="meme-title">Git Life</h2>
